@@ -1,0 +1,2 @@
+# glossos
+internship project
