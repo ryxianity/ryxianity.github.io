@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="stylesheet" href="style/67.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/jpeg" href="images/logo_button(1).svg" sizes="512x512">
+      <title>GlossOS 1.0</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div style="height: 100vh; position: relative;">
+        <div class="win7" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <div class="window glass active" style="max-width: none; --w7-w-bg: #55dc60;">
+            <div class="title-bar" style="background-attachment: scroll">
+              <div class="title-bar-text">About this website</div>
+              <div class="title-bar-controls">
+                <button aria-label="Help" id="about_help"></button>
+              </div>
+            </div>
+            <div class="window-body has-space" style="text-align: center; font-size: 150%">
+              <img src="images/logo_button(1).svg" width="300" height="300" style="margin: 1rem 5rem;">
+              <p id="logotext">GlossOS 1.0</p>
+              <br>
+              <p style="margin: 15px">&trade; Sean Guerrero 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup">
+          <div class="content" id="about_popup">
+          <div class="win7" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <div class="window glass active" style="min-width: 25vw; max-width: none; --w7-w-bg: #55dc60;">
+              <div class="title-bar" style="background-attachment: scroll">
+                <div class="title-bar-text">More about this website</div>
+                <div class="title-bar-controls">
+                  <button aria-label="Close" id="about_popup_close"></button>
+                </div>
+              </div>
+              <div class="window-body has-space" style="text-align: left; font-size: 150%">
+                <p>Welcome to my website!</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div style="height: 300vh">
+        <div class="macosx-aqua" style="position: sticky; top: 1em; padding-bottom: 2em;">
+          <button class="secondary" onclick="button_pressed()"><span>Cancel</span></button>
+          <button class="primary" onclick="button_pressed()"><span>Save</span></button>
+        </div>
+        <img src="images/cat_with_fade.jpeg" width="225" height="225">
+      </div>
+      -->
+
+      <!--
+      <video width="1108" height="820" controls>
+        <source src="videos/aquadesigngoalsclip.mp4" type="video/mp4">
+      </video>
+      -->
+
+      <br>
+      <div style="height: 100vh; position: relative;">
+        <div class="win7" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <div class="window glass active" style="max-width: none; --w7-w-bg: #55dc60;">
+            <div class="title-bar" style="background-attachment: scroll">
+              <div class="title-bar-text">Introductions</div>
+              <div class="title-bar-controls">
+              </div>
+            </div>
+            <div class="window-body has-space" style="text-align: left; font-size: 150%">
+              <h1 class="frutigeraero" style="text-align: left;">Frutiger Aero!</h1>
+              <p>"What is Frutiger Aero?" you might ask...<br>
+              Design trend
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="win7">
+        <div class="window glass active" style="width: 100vw; position: fixed; bottom: 0; overflow-x: hidden; --w7-w-bg: #55dc60;">
+          <div class="title-bar" style="background-attachment: scroll;">
+            <div class="title-bar-text" style="display: flex;">
+              <img id="startbutton" src="images/logo_button(1).svg" width="55vh" height="55vh" style="cursor: pointer; margin-right: 10%;">
+              <img src="images/cat_with_fade.jpeg" width="55vh" height="55vh" style="cursor: pointer;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/script.js" defer></script>
+  </body>
+</html>

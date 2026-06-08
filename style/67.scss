@@ -1,0 +1,192 @@
+@import "https://unpkg.com/7.css/dist/7.scoped.css";
+@import url("https://googleapis.com");
+@import "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css";
+
+.macosx-aqua {
+  body {
+    background: repeating-linear-gradient(#F0F0F0, #F0F0F0 4px, #FFFFFF 4px, #FFFFFF 8px);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center center;
+    column-gap: 2rem;
+  }
+
+  button {
+    grid-row: 1;
+    font-size: 3rem; /* change me to adjust the scale of the buttons */
+    font-family: "Lunasima", system-ui;
+    font-weight: 400;
+    height: 1.75em;
+    padding: 0 2em;
+    min-width: 6em;
+    border-radius: 1000px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+  }
+
+  @mixin pseudo-positioning {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 33%;
+  }
+
+  button.primary {
+    background: linear-gradient(rgba(0, 65, 184, 0.625), rgba(45, 115, 199, 0.625), rgba(33, 160, 196, 0.625));
+    box-shadow: 0 0.375em 0.5em rgba(0, 0, 0, 0.3), 
+                0 0.125em 0.125em rgba(0, 78, 187, 0.5), 
+                inset 0 0.25em 0.5em rgba(0, 17, 49, 0.8),
+                inset 0 0.375em 0.5em 0.25em rgba(0, 78, 187, 0.75)
+  }
+
+  button.primary:active {
+    box-shadow: 0 0.375em 0.5em rgba(0, 0, 0, 0.3), 
+                0 0.125em 0.125em rgba(0, 78, 187, 0.5), 
+                inset 0 0.25em 0.5em rgba(0, 17, 49, 0.8),
+                inset 0 0.375em 0.5em 0.25em rgba(0, 78, 187, 0.75),
+                0 0 0.5em rgba(52, 106, 227, 0.5);
+  }
+
+  button.secondary {
+    background: linear-gradient(rgba(160, 160, 160, 0.625), rgba(255, 255, 255, 0.625));
+    box-shadow: 0 0.375em 0.5em rgba(0, 0, 0, 0.2), 
+                0 0.125em 0.125em rgba(0, 0, 0, 0.3),  
+                inset 0 0.25em 0.25em rgba(0, 0, 0, 0.4),
+                inset 0 0.375em 0.5em 0.25em #BBBBBB;
+  }
+
+  button.secondary:active {
+    box-shadow: 0 0.375em 0.5em rgba(0, 0, 0, 0.2), 
+                0 0.125em 0.125em rgba(0, 0, 0, 0.3),  
+                inset 0 0.25em 0.25em rgba(0, 0, 0, 0.4),
+                inset 0 0.375em 0.5em 0.25em #BBBBBB,
+                0 0 0.5em rgba(0, 0, 0, 0.25);
+  }
+
+  /* top shine */
+  button:before {
+    @include pseudo-positioning;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+    width: calc(100% - 0.875em);
+    border-radius: 2em 2em 0.5em 0.5em;
+    top: 5%;
+    filter: blur(1px);
+    z-index: 2;
+  }
+
+  /* bottom glow */
+  button:after {
+    @include pseudo-positioning;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgb(255, 255, 255, 0.5));
+    width: calc(100% - 1.25em);
+    border-radius: 0.75em;
+    bottom: 10%;
+    filter: blur(3px);
+  }
+
+  /* text */
+  button span {
+    position: relative;
+    top: -1px;
+    z-index: 1;  
+    letter-spacing: 0.0375em;
+    -webkit-text-stroke-width: 0.025em;
+    -webkit-text-stroke-color: #000000;
+  }
+
+  button.primary span {
+    text-shadow: 0 0.25em 0.2em rgba(30, 77, 161, 0.5);
+  }
+
+  button.secondary span {
+    text-shadow: 0 0.25em 0.2em rgba(0, 0, 0, 0.25);
+  }
+}
+
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    /* Match the negative value of your background-size width for a seamless loop */
+    background-position: -225px -225px; 
+  }
+}
+
+body {
+  background: url("../images/materialdictionary178_168(1).jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  /*
+  background: url("../images/cat_with_fade.jpeg") repeat;
+  background-size: 225px 225px; /* Match width and height variables */
+  
+  /* Apply the animation loop */
+  /*
+  animation: scrollBackground 0.5s linear infinite;
+  */
+}
+
+#logotext {
+  font-family: "Lunasima",Segoe UI,SegoeUI,Noto Sans,sans-serif;
+  font-weight: 500;
+  font-size: 200%;
+}
+
+#frutigeraero {
+  font-size: 250%;
+  text-align: center;
+  
+  background: linear-gradient(to right, #FFF 20%, #FF0 40%, #FF0 60%, #FFF 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 1s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  min-width: max-content;
+}
+
+.popup {
+}
+
+.popup .content {
+  visibility: hidden;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.25s;
+  animation: fadeIn 0.25s
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

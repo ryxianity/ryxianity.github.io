@@ -1,0 +1,39 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-2.571,-789.537,789.537,-2.571,316.636,955.712)">
+			<stop offset="0" stop-color="#389e51"/>
+			<stop offset="1" stop-color="#3aa354"/>
+		</linearGradient>
+		<radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,379.061,-379.061,0,540,540)">
+			<stop offset=".737" stop-color="#389e51"/>
+			<stop offset="1" stop-color="#ffffff" stop-opacity=".75"/>
+		</radialGradient>
+		<linearGradient id="g3" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,342.036,-473.728,0,236.019,165.747)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity=".69"/>
+			<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+		</linearGradient>
+		<radialGradient id="g4" cx="0" cy="0" r="1" fx=".566" fy="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,181.013,-247.005,0,540,732.098)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity=".39"/>
+			<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+		</radialGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: url(#g2) } 
+		.s2 { fill: #d1ffdd;stroke: #d1ffdd;stroke-linecap: round;stroke-linejoin: round;stroke-width: 8 } 
+		.s3 { fill: url(#g3) } 
+		.s4 { fill: url(#g4) } 
+	</style>
+	<g id="Layer 1">
+		<path id="back circle border" fill-rule="evenodd" class="s0" d="m926.68 540c0 213.83-172.85 386.68-386.68 386.68-213.83 0-386.68-172.85-386.68-386.68 0-213.83 172.85-386.68 386.68-386.68 213.83 0 386.68 172.85 386.68 386.68z"/>
+		<path id="back circle inner" fill-rule="evenodd" class="s1" d="m159 540c0-210.69 170.31-381 381-381 210.69 0 381 170.31 381 381 0 210.69-170.31 381-381 381-210.69 0-381-170.31-381-381z"/>
+	</g>
+	<g id="Layer 2">
+		<path id="Shape 2" fill-rule="evenodd" class="s2" d="m642.17 577.61c36.08 114.7-51.43 218.07-173.83 218.07-122.4 0-221.34-114.43-221.34-256 0-141.56 98.94-255.99 221.34-255.99 60.68 0 115.6 28.12 155.55 73.74 17.19 19.63 40.52 46.36 14.48 76.16-24.65 28.19-65.68-6.22-75.24-16.1-25.09-25.92-58.21-41.66-94.56-41.66-78.48 0-139.95 73.38-141.91 164.12-2.56 118.99 67.14 208.97 124.35 205.76 53.87-3.02 89.09-72.37 81.36-159.5"/>
+		<path id="Shape 3" fill-rule="evenodd" class="s2" d="m681.12 519.39c0 0-3.64 167.45 72.69 193.27 49.67 16.79 78.54 19.22 78.54 19.22l-199.49 5.81c0 0-0.19-111.46-97.2-149.12-79.94-31.02-200.96-36.6-200.96-36.6-5.73 1.17 340.66-31.4 346.42-32.58z"/>
+	</g>
+	<g id="Layer 3">
+		<path id="Shape 4" fill-rule="evenodd" class="s3" d="m540 540c-143.23 0-259-83.59-259-187 0-103.41 115.77-187 259-187 143.23 0 259 83.59 259 187 0 103.41-115.77 187-259 187z"/>
+		<path id="Shape 4 copy" fill-rule="evenodd" class="s4" d="m540 920c-143.23 0-259-83.59-259-187 0-103.41 115.77-187 259-187 143.23 0 259 83.59 259 187 0 103.41-115.77 187-259 187z"/>
+	</g>
+</svg>
